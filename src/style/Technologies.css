@@ -1,0 +1,82 @@
+.technologies {
+    width: 100%;
+    margin-top: 114px;
+    color: white;
+}
+.technologies__top {
+    width: 100%;
+    height: 303px;
+    border-radius: 160px;
+    background-image: url('../images/technologies.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .2s ease;
+}
+.technologies__bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    position: relative;
+}
+.image__tech{
+    height: auto;
+    width: 20%;
+}
+#tech1{
+    transform: translateY(150px);
+    opacity: 0.1;
+    transition: all .3s ease-in;
+}
+#tech2{
+    transform: translateY(150px);
+    opacity: 0.1;
+    transition: all .3s ease-in;
+}
+#tech3{
+    transform: translateY(150px);
+    opacity: 0.1;
+    transition: all .3s ease-in;
+}
+#tech4{
+    transform: translateY(150px);
+    opacity: 0.1;
+    transition: all .3s ease-in;
+}
+
+@media (max-width: 966px) {
+    .image__tech {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .technologies__top{
+        transition: all 0s;
+    }
+    .technologies__top h1{
+        font-size: 36px;
+    }
+    .technologies__top{
+        border-radius: 60px;
+    }
+}
+@media (max-width: 619px) {
+    .technologies__top h1{
+        font-size: 28px;
+    }
+}
+@media (max-width: 490px) {
+    .technologies__top h1{
+        font-size: 20px;
+    }
+    .technologies__bottom{
+        overflow: hidden;
+    }
+}

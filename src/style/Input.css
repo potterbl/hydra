@@ -1,0 +1,39 @@
+.input__wrapper{
+    position: relative;
+}
+.input {
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    width: 100%;
+    height: 72px;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding-left: 30px;
+    font-size: 16px;
+    color: white
+}
+.label {
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    transition: all .3s ease;
+    font-size: 12px;
+    pointer-events: none;
+}
+.entered {
+    top: 0;
+    transform: translateY(-100%);
+    left: 30px;
+    font-size: 14px;
+}
+@media (max-width: 684px) {
+    .input__wrapper{
+        max-width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+}

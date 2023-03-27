@@ -1,0 +1,48 @@
+.carusel__button{
+    display: none;
+}
+.carusel__wrapper{
+    overflow: unset;
+    width: 100%;
+}
+.carusel{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+}
+@media (max-width: 966px) {
+    .carusel{
+        width: 400%;
+        margin-top: 0px;
+        position: absolute;
+        display: grid;
+        align-items: center;
+        grid-template-areas: "a a a a";
+        justify-content: space-around;
+        transition: all .3s ease;
+    }
+    .carusel__wrapper{
+        overflow: hidden;
+    }
+    .carusel__button{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        padding: 20px 20px;
+    }
+    .left__btn{
+        left: 0;
+    }
+    .right__btn{
+        left: 100%;
+        transform: translate(-100%, -50%);
+    }
+    .card{
+        width: 100%;
+    }
+}

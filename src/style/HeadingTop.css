@@ -1,0 +1,34 @@
+.top__heading{
+    transform: translateX(-150px);
+    transition: all .4s ease;
+    opacity: 0.1;
+}
+.text__heading{
+    transform: translateX(150px);
+    transition: all .4s ease;
+    opacity: 0.1;
+}
+
+@media (max-width: 1320px) {
+    .top__heading h1{
+        font-size: 30px;
+    }
+    .text__heading {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .text__heading{
+        display: none;
+    }
+    .heading__float img{
+        display: none;
+    }
+    .top__heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

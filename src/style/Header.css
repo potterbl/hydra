@@ -1,0 +1,135 @@
+a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    width: calc(100% - (84px * 2));
+    height: 103px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.center {
+    position: absolute;
+    left: 27.63%;
+    width: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 38px;
+    align-items: center;
+    transition: all .3s ease;
+}
+#menu__button{
+    display: none;
+}
+@media (max-width: 1230px) {
+    .center{
+
+    }
+}
+@media (max-width: 1085px) {
+    .center a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .header{
+        width: 88%;
+    }
+    #menu__button{
+        display: block;
+    }
+    .anim__header {
+        display: none;
+    }
+    .animation__in{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: max-content;
+        top: 100%;
+        right: 0;
+        animation: menuShown .6s ease-in forwards;
+        height: 100%;
+        align-items: flex-end;
+    }
+    .animation__out{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: max-content;
+        top: 100%;
+        right: 0;
+        animation: menuClosed .6s ease-in;
+        height: 100%;
+        align-items: flex-end;
+    }
+    @keyframes menuShown {
+        0%{
+            transform: translate(15%, -320%);
+        }
+        100% {
+            transform: translate(15%, -20%);
+        }
+    }
+    @keyframes menuClosed {
+        100%{
+            transform: translate(15%, -320%);
+        }
+        0% {
+            transform: translate(15%, -20%);
+        }
+    }
+    .center {
+        flex-direction: column;
+        width: fit-content;
+        transform: translateX(-15%);
+        top: 0;
+        position: unset;
+    }
+    .center a{
+        margin: 4px 0;
+        font-size: 16px;
+    }
+    .right {
+        position: unset;
+        grid-template-areas: unset;
+        gap: 10px;
+        transform: translate(0);
+    }
+}
+@media (max-width: 375px) {
+    .hide__logo{
+        display: none;
+    }
+}

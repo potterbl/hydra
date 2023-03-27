@@ -1,0 +1,23 @@
+.App {
+    margin: 0;
+    padding: 50px 84px;
+    box-sizing: border-box;
+    background-color: rgb(48, 44, 66);
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+p {
+    color: white;
+}
+.flexable {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .App{
+        padding: 50px 25px;
+    }
+}
