@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/hydra/static/css/main.cf0debba.css",
+    "main.js": "/hydra/static/js/main.1b8e588b.js",
+    "static/media/introduction.png": "/hydra/static/media/introduction.d9793d080a255344f8d1.png",
+    "static/media/girlMain.png": "/hydra/static/media/girlMain.14e614ff6c995f1eeac5.png",
+    "static/media/technologies.png": "/hydra/static/media/technologies.0f65f9bb2cdcc788d31f.png",
+    "static/media/pexels-shvets-production-7561969 1.png": "/hydra/static/media/pexels-shvets-production-7561969 1.95efb36e98c2a751208f.png",
+    "static/media/pexels-mali-maeder-756439 1.png": "/hydra/static/media/pexels-mali-maeder-756439 1.14e92a3486ce45efa069.png",
+    "static/media/pexels-rodnae-productions-8098263 1.png": "/hydra/static/media/pexels-rodnae-productions-8098263 1.8fac9c784695512f8b1a.png",
+    "static/media/pexels-mikhail-nilov-7887140 1.png": "/hydra/static/media/pexels-mikhail-nilov-7887140 1.287159d5b596466f525a.png",
+    "index.html": "/hydra/index.html",
+    "main.cf0debba.css.map": "/hydra/static/css/main.cf0debba.css.map",
+    "main.1b8e588b.js.map": "/hydra/static/js/main.1b8e588b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf0debba.css",
+    "static/js/main.1b8e588b.js"
+  ]
+}
